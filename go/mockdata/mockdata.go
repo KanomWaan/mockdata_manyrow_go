@@ -14,7 +14,7 @@ func main() {
 	// driverName := os.Getenv("DRIVER_NAME")
 	driverName := "mysql"
 	// dbHost := os.Getenv("DB_HOST")
-	dbHost := "bob:101@tcp(localhost:3306)/HelloWorld"
+	dbHost := "user:password(url)/dbname"
 	db, err := connectDB(driverName, dbHost)
 	if err != nil {
 		log.Fatal("connectDB: ", err)
